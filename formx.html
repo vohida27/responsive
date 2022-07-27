@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>registration form</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  margin-right: 650px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Register</h2>
+<p>please fill the form to register.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Roll no</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="rollno" placeholder="Your roll no..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="qualification">qualification</label>
+      </div>
+      <div class="col-75">
+        <select id="qualification" name="qualification">
+          <option value="High school">High school</option>
+          <option value="pre university">pre university</option>
+          <option value="diploma">diploma</option>
+          <option value="2nd year">2nd year</option>
+          <option value="3rd year">3rd year</option>
+          <option value="4th year">4th year</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="address">address</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="address" name="address" placeholder="Your address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="parents details"> parents details</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="details" name="details" placeholder="Your mother name..">
+      <input type="text" id="details" name="details" placeholder="Your father name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Aadhar number">Aadhar number</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="Aadhar number" name="Aadhar" placeholder="Your Aadhar..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="courses completed">courses completed</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="courses" name="courses" placeholder="enter courses completed..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Xth CGPA">Xth CGPA</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="Xth CGPA" name="Xth CGPA" placeholder="enter CGPA.." >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="XII th CGPA">XII th CGPA</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="XII th CGPA" name="XII th CGPA" placeholder="enter XII th CGPA..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+       <label for="photo">upload your photo</label>
+      </div>
+      <div class="col-75">
+       <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <button type="submit" value="submit">OK</button>
+       </form>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-25">
+       <label for="resume">upload your resume</label>
+      </div>
+      <div class="col-75">
+       <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <button type="submit" value="submit">OK</button>
+       </form>
+      </div>
+     </div><br />
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
