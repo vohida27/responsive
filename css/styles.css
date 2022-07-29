@@ -1,0 +1,48 @@
+
+body{
+  margin: 0;
+  background-color: #DFE8CC;
+}
+.y{
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.pic{
+  background-image: url('https://wallpapercrafter.com/th800/234052-a-person-standing-on-a-peak-overlooking-a-cloudy-f.jpg');
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+         background-size: 100% 100%;
+         padding-top: 20px;
+         padding-bottom: 340px;
+}
+.x{
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
+.z{
+  margin: 10px;
+}
+.registerbtn{
+  background-color: #92B4EC;
+  width: 250px;
+  height: 50px;
+  border-style: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  border-radius: 20px;
+}
+.center{
+  margin-left: 10px;
+}
+.end{
+  text-align: center;
+}
+.registerbtn:hover{
+  background-color: #8CC0DE;
+}
+.a{
+  font-size: 20px;
+}
